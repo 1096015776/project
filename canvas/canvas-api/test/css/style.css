@@ -1,0 +1,40 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.container {
+  /* border:1px solid red; */
+  position: relative;
+}
+
+.container button {
+  border: none;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  background-color: #fff;
+  padding:4px 6px;
+  border-radius: 4px;
+  color: #333;
+}
+
+#eraser {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+}
+
+#paintPencil {
+  position: fixed;
+  bottom: 12px;
+  left: 12px;
+}
+
+.action #eraser{
+  display: none;
+}
+.action.useEraser #eraser{
+  display: block;
+}
+.action.useEraser #paintPencil{
+  display: none;
+}

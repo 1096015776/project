@@ -1,0 +1,37 @@
+{
+  "id": "4793246",
+  "name": "paint",
+  "font_family": "iconfont",
+  "css_prefix_text": "icon-",
+  "description": "",
+  "glyphs": [
+    {
+      "icon_id": "392016",
+      "name": "PENCIL",
+      "font_class": "pencil",
+      "unicode": "e629",
+      "unicode_decimal": 58921
+    },
+    {
+      "icon_id": "8554176",
+      "name": "eraser-fill",
+      "font_class": "eraser-fill",
+      "unicode": "e66b",
+      "unicode_decimal": 58987
+    },
+    {
+      "icon_id": "12898946",
+      "name": "delete",
+      "font_class": "delete",
+      "unicode": "e680",
+      "unicode_decimal": 59008
+    },
+    {
+      "icon_id": "34452995",
+      "name": "download",
+      "font_class": "download",
+      "unicode": "e839",
+      "unicode_decimal": 59449
+    }
+  ]
+}

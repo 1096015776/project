@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>方玺个人简历</title>
+  <link rel="stylesheet" href="./css/profile.css" type="text/css" />
+  <link rel="stylesheet" href="./css/normal.css" type="text/css" />
+  <link rel="stylesheet" href="./fonts/iconfont.css" type="text/css" />
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/tween.js/23.1.3/tween.umd.js"></script>
+
+</head>
+
+<body>
+  <div class="site-welcome active" id="siteWelcome">
+    <div class="loading"></div>
+  </div>
+  <header class="clearfix topbar" id="topBar">
+    <div class="topbar-inner">
+      <div class="logo">
+        <span>fx</span>
+        <span>card</span>
+      </div>
+      <nav>
+        <ul class="clearfix">
+          <li class="menutrigger">
+            <a href="#about" class="navTo">关于</a>
+          </li>
+          <li class="menutrigger"><a href="#skills" class="navTo">技能</a></li>
+          <li class="menutrigger">
+            <a href="#jobs" class="navTo">作品</a>
+            <ul class="submenu">
+              <li>作品1</li>
+              <li>作品2</li>
+              <li>作品3</li>
+            </ul>
+          </li>
+          <li class="menutrigger"><a href="#" class="navTo">博客</a></li>
+          <li class="menutrigger"><a href="#" class="navTo">日历</a></li>
+          <li class="menutrigger"><a href="#" class="navTo">联系方式</a></li>
+          <li class="menutrigger"><a href="#" class="navTo">其他</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="banner-mask"></div>
+    </div>
+    <div class="user-card" id="about" data-nav>
+      <div class="profile clearfix">
+        <div class="avatar">
+          <img src="./img/avatar.png"></img>
+        </div>
+        <div class="text">
+          <span class="welcome">HELLO</span>
+          <h1>方玺</h1>
+          <p>前端开发工程师</p>
+          <hr>
+          <dl class="clearfix">
+            <dt>年龄</dt>
+            <dd>28</dd>
+            <dt>所在城市</dt>
+            <dd>重庆</dd>
+            <dt>邮箱</dt>
+            <dd>1096015776@qq.com</dd>
+            <dt>手机</dt>
+            <dd>13882915962</dd>
+          </dl>
+        </div>
+      </div>
+      <footer class="media">
+        <span class="hcenter">
+          <a href="#"><span class="iconfont">&#xe884;</span></a>
+          <a href="#"><span class="iconfont">&#xe882;</span></a>
+          <a href="#"><span class="iconfont">&#xf245;</span></a>
+          <a href="#"><span class="iconfont">&#xe87f;</span></a>
+          <a href="#"><span class="iconfont">&#xe883;</span></a>
+        </span>
+      </footer>
+    </div>
+    <p class="downloadProfile-wrapper">
+      <a class="downloadProfile" href="./file/方玺.pdf" target="_blank" download>下载pdf简历</a>
+    </p>
+    <p class="selfIntroduction">
+      方玺,初级前端开发工程师,四年工作经验<br>
+      技能: html,css,js,vue,linux
+    </p>
+  </main>
+  <section class="skills" mt60 id="skills" data-nav>
+    <h2 class="title">技能</h2>
+    <ol class="clearfix">
+      <li>
+        <h3>HTML 5 &amp;css3</h3>
+        <div class="progressBar">
+          <div class="progress"></div>
+        </div>
+      </li>
+      <li>
+        <h3>JavaScript</h3>
+        <div class="progressBar">
+          <div class="progress" style="width:70%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Jquery</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 75%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Vue</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 80%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>React</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 60%;"></div>
+        </div>
+      </li>
+      <li>
+        <h3>Node.js</h3>
+        <div class="progressBar">
+          <div class="progress" style="width: 40%;"></div>
+        </div>
+      </li>
+    </ol>
+  </section>
+  <section mt60 class="jobs" id="jobs" data-nav>
+    <h2 class="title">作品集</h2>
+    <div class="nav-wrapper">
+      <nav>
+        <ol class="clearfix">
+          <li id="all">所有</li>
+          <li id="framework">框架</li>
+          <li id="originJs">原生Js&amp;Css</li>
+        </ol>
+        <div class="categoryBar">
+          <div id="categoryBar" class="categoryBar-inner state1" />
+        </div>
+      </nav>
+    </div>
+    <div class="category">
+      <div class="big">
+        <img src="./img/jobs-1.jpg" />
+      </div>
+      <div class="small">
+        <img src="./img/jobs-2.jpg" />
+      </div>
+      <div class="small2">
+        <img src="./img/jobs-3.jpg" />
+      </div>
+    </div>
+  </section>
+</body>
+<script src="./js/main.js"></script>
+
+</html>

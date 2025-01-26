@@ -1,0 +1,16 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+.container{
+  height: 100vh;
+  background: pink;
+  position: relative;
+}
+.point{
+  width: 6px;
+  height: 6px;
+  background: black;
+  border-radius: 50%;
+  position: absolute;
+}
