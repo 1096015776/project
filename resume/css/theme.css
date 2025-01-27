@@ -1,0 +1,13 @@
+:root {
+  /* 前景色 */
+  --primary-color: #e8676b;
+  /* 背景色 */
+  --primary-bg-color: #efefef;
+  /* logo颜色 */
+  --logo-color: #9a9da2;
+  /* 导航颜色 */
+  --nav-color: rgba(255, 255, 255, 0.7);
+  --nav-font-size: 13px;
+  --nav-sticky-color: #3d4451;
+  --max-show-width: 1550px;
+}
