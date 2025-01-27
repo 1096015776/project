@@ -240,4 +240,5 @@ main .banner-mask {
   color: rgb(76, 86, 106);
   font-size: 10px;
   text-align: center;
+  padding-bottom: 10px;
 }
