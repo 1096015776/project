@@ -1,9 +1,17 @@
+@font-face {
+  font-family: 'MyCustomFont';
+  src: url('../font/custom.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
 * {
   margin: 0;
   padding: 0;
 }
 
-ul {
+ul,
+ol {
   list-style-type: none;
 }
 
@@ -151,6 +159,7 @@ main .banner-mask {
 .user-card {
   background-color: white;
   margin-top: -340px;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
 }
 
 .user-card .avatar {
@@ -236,9 +245,166 @@ main .banner-mask {
 
 .user-card .social {}
 
+
+.social ul.iconfont {
+  display: flex;
+  background-color: var(--primary-color);
+  padding: 28px 0;
+  color: white;
+  font-size: 20px;
+  justify-content: center;
+}
+
+.social ul.iconfont li {
+  padding: 12px;
+  cursor: pointer;
+}
+
+.social ul.iconfont li:hover {
+  border-radius: 50%;
+  background-color: rgba(0, 0, 0, 0.1);
+  transition: all .2s;
+}
+
+.social ul.iconfont li:nth-child(n+2) {
+  margin-left: 26px;
+}
+
+main .downloadResume-wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+main .downloadResume {
+  padding: 21px 55px;
+  border: 1px solid #cdcfd1;
+  background-color: #efefef;
+  margin: 32px 0;
+  transition: box-shadow .3s;
+  font-weight: bold;
+  font-size: 14px;
+  cursor: pointer;
+}
+
+main .downloadResume:hover {
+  box-shadow: 0px 4px 13px 0px rgba(0, 0, 0, 0.2);
+}
+
+main .selfIntroduction {
+  max-width: 960px;
+  margin: 0 auto;
+  text-align: center;
+  font-family: 'MyCustomFont';
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+section.skills {
+  margin-top: 60px;
+}
+
+section h2.title {
+  text-align: center;
+}
+
+section.skills h3 {
+  font-size: 14px;
+  color: #3d4451;
+}
+
+section.skills ol {
+  background-color: white;
+  display: flex;
+  flex-wrap: wrap;
+  padding: 42px 0;
+  margin-top: 30px;
+}
+
+section.skills ol li {
+  width: 50%;
+  box-sizing: border-box;
+}
+
+section.skills ol li:nth-child(2n+1) {
+  padding-left: 52px;
+  padding-right: 21px;
+}
+
+section.skills ol li:nth-child(2n) {
+  padding-right: 52px;
+  padding-left: 21px;
+}
+
+section.skills ol li:nth-child(n+3) {
+  margin-top: 40px;
+}
+
+section.skills .progressBar {
+  height: 5px;
+  background-color: #fae1e1;
+  border-radius: 2px;
+  margin-top: 4px;
+  overflow: hidden;
+}
+
+section.skills .progress {
+  height: 100%;
+  background-color: #e8676b;
+  width: 48%;
+  border-radius: 2px;
+}
+
+section.works {
+  margin-top: 60px;
+}
+
+section.works nav {
+  text-align: center;
+}
+
+section.works nav ol {
+  display: inline-flex;
+  text-align: center;
+  justify-content: center;
+  margin-top: 26px;
+  position: relative;
+}
+
+
+section.works nav ol li:nth-child(n+2) {
+  margin-left: 48px;
+}
+
+section.works nav ol li {
+  color: #000;
+  font-size: 13px;
+  font-weight: 600;
+  cursor: pointer;
+  padding-bottom: 13px;
+}
+
+section.works nav .categoryBar {
+  display: block;
+  position: absolute;
+  height: 5px;
+  top: 100%;
+  background-color: white;
+  border-radius: 2px;
+  width: 100%;
+}
+
+section.works nav .categoryBar-inner {
+  height: 100%;
+  border-radius: 2px;
+  background-color: var(--primary-color);
+  transition: all .3s;
+}
+
 .site-footer {
   color: rgb(76, 86, 106);
   font-size: 10px;
   text-align: center;
   padding-bottom: 10px;
+  padding-top: 10px;
+
 }
