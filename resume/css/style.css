@@ -1,9 +1,9 @@
-@font-face {
-  font-family: 'MyCustomFont';
-  src: url('../font/custom.ttf') format('truetype');
-  font-weight: normal;
-  font-style: normal;
-}
+/* @font-face { */
+/*   font-family: 'MyCustomFont'; */
+/*   src: url('../font/custom.ttf') format('truetype'); */
+/*   font-weight: normal; */
+/*   font-style: normal; */
+/* } */
 
 * {
   margin: 0;
@@ -294,7 +294,7 @@ main .selfIntroduction {
   max-width: 960px;
   margin: 0 auto;
   text-align: center;
-  font-family: 'MyCustomFont';
+  font-family: STKaiti;
   font-size: 18px;
   line-height: 1.8;
 }
