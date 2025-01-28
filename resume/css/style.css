@@ -260,10 +260,11 @@ main .banner-mask {
   cursor: pointer;
 }
 
-.social ul.iconfont li:hover {
+.social ul.iconfont li:hover,
+.social ul.iconfont li:active {
   border-radius: 50%;
-  background-color: rgba(0, 0, 0, 0.1);
-  /* transition: all .2s; */
+  background-color: rgba(0, 0, 0, 0.2);
+  transition: all .2s;
 }
 
 .social ul.iconfont li:nth-child(n+2) {
