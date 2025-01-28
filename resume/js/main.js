@@ -69,7 +69,7 @@ $('#siteNav ul li a').on('click', (e) => {
   if ($('#siteHeaderWrapper').hasClass('site-header-sticky')) {
     animateNavToInTween($(targetDomId).offset().top - $('#siteHeaderWrapper').height() - $('#siteHeaderWrapper').height() - 40)
   } else {
-    animateNavToInTween($(targetDomId).offset().top - $('#siteHeaderWrapper').height() - $('#siteHeaderWrapper').height())
+    animateNavToInTween($(targetDomId).offset().top - $('#siteHeaderWrapper').height() - $('#siteHeaderWrapper').height() - document.documentElement.clientHeight / 100 * 10);
   }
 })
 if (document.ontouchstart !== null) {
