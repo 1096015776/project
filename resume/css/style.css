@@ -406,5 +406,41 @@ section.works nav .categoryBar-inner {
   text-align: center;
   padding-bottom: 10px;
   padding-top: 10px;
+}
 
+section.works .works-container {
+  display: none;
+  width: 930px;
+  height: 591px;
+  margin-top: 35px;
+  /* background-color: pink; */
+  position: relative;
+}
+
+section.works .works-container .big-img {
+  position: absolute;
+  left: 12px;
+  width: 607px;
+  height: 576px;
+}
+
+section.works .works-container .small-img {
+  position: absolute;
+  right: 12px;
+  width: 294px;
+  height: 278px;
+}
+
+section.works .works-container .small-img2 {
+  position: absolute;
+  right: 12px;
+  width: 294px;
+  height: 278px;
+  bottom: 15px;
+}
+
+section.works .works-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
