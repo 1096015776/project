@@ -66,7 +66,11 @@ function animateNavToInTween(y) {
 $('#siteNav ul li a').on('click', (e) => {
   e.preventDefault();
   let targetDomId = e.currentTarget.getAttribute('href')
-  animateNavToInTween($(targetDomId).offset().top - $('#siteHeaderWrapper').height() - 80)
+  if ($('#siteHeaderWrapper').hasClass('site-header-sticky')) {
+    animateNavToInTween($(targetDomId).offset().top - $('#siteHeaderWrapper').height() - $('#siteHeaderWrapper').height() - 40)
+  } else {
+    animateNavToInTween($(targetDomId).offset().top - $('#siteHeaderWrapper').height() - $('#siteHeaderWrapper').height())
+  }
 })
 if (document.ontouchstart !== null) {
   $('#siteNav').addClass('pcAnimate')
