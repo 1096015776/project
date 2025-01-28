@@ -8,27 +8,16 @@ document.onscroll = (e) => {
     $(".site-header-wrapper").removeClass("site-header-sticky")
   }
 }
+
 $('#categoryBarInner').css({
   width: $('#all').width()
 })
 
-$("#all").on('click', () => {
-  $('#categoryBarInner').css({
-    width: $('#all').width(),
-    marginLeft: '0px'
-  })
-});
 
-$("#framework").on('click', () => {
+$("section.works nav ol.category li").on('click', (e) => {
   $('#categoryBarInner').css({
-    width: $('#framework').width(),
-    marginLeft: $('#framework').offset().left - $("#categoryBar").offset().left
+    width: $('#' + e.currentTarget.id).width(),
+    marginLeft: $('#' + e.currentTarget.id).offset().left - $("#categoryBar").offset().left
   })
-});
+})
 
-$("#originJs").on('click', () => {
-  $('#categoryBarInner').css({
-    width: $('#originJs').width(),
-    marginLeft: $('#originJs').offset().left - $("#categoryBar").offset().left
-  })
-});
