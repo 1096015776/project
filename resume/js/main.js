@@ -1,13 +1,36 @@
 setTimeout(() => {
   $('#siteWelcome').hide()
-}, 2000);
-document.onscroll = (e) => {
-  if (window.scrollY > 0) {
-    $(".site-header-wrapper").addClass("site-header-sticky")
-  } else {
-    $(".site-header-wrapper").removeClass("site-header-sticky")
+  document.onscroll = (e) => {
+    if (window.scrollY > 0) {
+      $(".site-header-wrapper").addClass("site-header-sticky");
+    } else {
+      $(".site-header-wrapper").removeClass("site-header-sticky");
+    }
+
+    let deviceHeight = document.documentElement.clientHeight - $('#siteHeaderWrapper').height();
+    let scrollY = window.scrollY;
+    let listenPointY = (scrollY + deviceHeight) / 2;
+    let navDom = $('[data-nav]');
+    let len = navDom.length;
+    let minIndex = 0;
+    let minVuales = Math.abs((navDom.eq(0).offset().top + navDom.eq(0).height()) / 2 - listenPointY);
+
+    for (let i = 0; i < len; i++) {
+      if (Math.abs((navDom.eq(i).offset().top + navDom.eq(i).height()) / 2 - listenPointY) < minVuales) {
+        minVuales = Math.abs((navDom.eq(i).offset().top + navDom.eq(i).height()) / 2 - listenPointY);
+        minIndex = i;
+      }
+      if (navDom.eq(i).offset().top - scrollY <= listenPointY) {
+        navDom.eq(i).addClass('no-offsetY')
+      }
+    }
+    $("#siteNav li").removeClass('highlight');
+    let currId = navDom.eq(minIndex).attr('id');
+    $(`#siteNav a[href="#${currId}"]`).parent().addClass('highlight');
   }
-}
+  window.scrollTo(0, 0);
+}, 2000);
+
 
 $('#categoryBarInner').css({
   width: $('#all').width()
@@ -21,3 +44,27 @@ $("section.works nav ol.category li").on('click', (e) => {
   })
 })
 
+
+//缓动动画
+function animate(time) {
+  TWEEN.update(time)
+  requestAnimationFrame(animate)
+}
+requestAnimationFrame(animate)
+
+function animateNavToInTween(y) {
+  let coords = { y: window.scrollY };
+  const tween = new TWEEN.Tween(coords)
+    .to({ y: y }, 1000)
+    .easing(TWEEN.Easing.Quadratic.In) // Use an easing function to make the animation smooth.
+    .onUpdate(() => {
+      window.scrollTo(0, coords.y);
+    })
+    .start()
+}
+
+$('#siteNav ul li a').on('click', (e) => {
+  e.preventDefault();
+  let targetDomId = e.currentTarget.getAttribute('href')
+  animateNavToInTween($(targetDomId).offset().top - $('#siteHeaderWrapper').height() - 80)
+})
