@@ -68,3 +68,6 @@ $('#siteNav ul li a').on('click', (e) => {
   let targetDomId = e.currentTarget.getAttribute('href')
   animateNavToInTween($(targetDomId).offset().top - $('#siteHeaderWrapper').height() - 80)
 })
+if (document.ontouchstart !== null) {
+  $('#siteNav').addClass('pcAnimate')
+}
