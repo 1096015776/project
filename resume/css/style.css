@@ -357,6 +357,12 @@ section.skills .progress {
   background-color: #e8676b;
   width: 48%;
   border-radius: 2px;
+  transform: translateX(-100%);
+  transition: transform .8s;
+}
+
+section.skills.no-offsetY .progress {
+  transform: translateX(0%);
 }
 
 section.works {
