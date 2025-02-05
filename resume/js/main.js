@@ -37,11 +37,13 @@ $('#categoryBarInner').css({
 })
 
 
-$("section.works nav ol.category li").on('click', (e) => {
+$("section.works nav ol.category li").on('click', function(e) {
   $('#categoryBarInner').css({
     width: $('#' + e.currentTarget.id).width(),
     marginLeft: $('#' + e.currentTarget.id).offset().left - $("#categoryBar").offset().left
-  })
+  });
+  let filterValue = $(this).data("filter");
+  $("#workCotainer").isotope({ filter: filterValue })
 })
 
 
