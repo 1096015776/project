@@ -28,6 +28,8 @@ setTimeout(() => {
     let currId = navDom.eq(minIndex).attr('id');
     $(`#siteNav a[href="#${currId}"]`).parent().addClass('highlight');
   }
+  //解决safari 浮动没有清除的问题
+  $("#workCotainer").isotope({ filter: "*" })
   window.scrollTo(0, 0);
 }, 2000);
 
@@ -44,6 +46,15 @@ $("section.works nav ol.category li").on('click', function(e) {
   });
   let filterValue = $(this).data("filter");
   $("#workCotainer").isotope({ filter: filterValue })
+})
+
+$("#workCotainer").isotope({
+  isOriginLeft: true,
+  itemSelector: '.pf-grid-item',
+  percentPosition: true,
+  masonry: {
+    columnWidth: '.pf-grid-sizer'
+  }
 })
 
 
