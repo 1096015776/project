@@ -7,6 +7,7 @@
   <title>皮卡丘</title>
   <link href="./vendor/prism.css" rel="stylesheet">
   <script src="./vendor/prism.js"></script>
+  <script src="./vendor/jquery.min.js"></script>
   <link href="css/style.css" rel="stylesheet">
   <link href="css/normal.css" rel="stylesheet">
   <style id="styleTag"></style>
@@ -15,6 +16,11 @@
 
 <body>
   <div class="codePreview">
+    <div class="option">
+      <button data-target="25">快</button>
+      <button data-target="50" class="active">中</button>
+      <button data-target="100">慢</button>
+    </div>
     <pre id="code">
     </pre>
   </div>

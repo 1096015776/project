@@ -16,7 +16,7 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 60vh;
+  height: 60dvh;
 }
 
 /* 设置皮卡丘的高度 */
@@ -162,13 +162,22 @@ body {
 /* -----------大功告成啦,pika,pika------------ */
 `
 let n = 0;
-let interval = setInterval(() => {
+function printCode() {
   n++;
   let codeContent = codeString.substring(0, n);
   styleTag.innerHTML = codeContent;
   code.innerHTML = Prism.highlight(codeContent, Prism.languages.css);
   code.scrollTop = code.scrollHeight;
-  if (n === codeString.length) {
-    clearInterval(interval);
-  }
-}, 50);
+  setTimeout(() => {
+    if (codeString.length !== n) {
+      printCode()
+    }
+  }, $('.codePreview .option button.active').attr('data-target') - 0)
+}
+printCode()
+$('.codePreview .option button').on('click', (e) => {
+  $('.codePreview .option button').removeClass("active")
+  e.currentTarget.classList.add("active")
+
+})
+
