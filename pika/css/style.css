@@ -1,0 +1,38 @@
+.codePreview {
+  position: relative;
+  padding: 20px;
+  height: 40dvh;
+  background-color: white;
+  box-shadow: 0 0 10px 0 #888;
+  /* overflow: hidden; */
+}
+
+.codePreview #code {
+  overflow: hidden;
+  height: 100%;
+}
+
+.codePreview .option {
+  position: absolute;
+  right: 12px;
+  top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+
+.codePreview .option button {
+  background-color: #efefef;
+  padding: 6px;
+  font-size: 10px;
+  border: none;
+  color: #3b4252;
+}
+
+.codePreview .option button.active {
+  box-shadow: 1px 1px 1px 0 #888;
+  color: #bf616a;
+}
+
+.codePreview .option button:nth-child(n+2) {
+  margin-top: 8px;
+}

@@ -1,0 +1,111 @@
+@font-face {
+  font-family: 'iconfont';
+  src: url('../iconfont/iconfont.woff2?t=1735045229578') format('woff2'),
+    url('../iconfont/iconfont.woff?t=1735045229578') format('woff'),
+    url('../iconfont/iconfont.ttf?t=1735045229578') format('truetype');
+}
+
+.iconfont {
+  font-family: "iconfont" !important;
+  font-size: 16px;
+  font-style: normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+
+* {
+  margin: 0;
+  padding: 0;
+  list-style-type: none;
+}
+
+body {
+  overflow: hidden;
+  position: relative;
+}
+
+.container button {
+  border: none;
+  /* box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5); */
+  background-color: #fff;
+  /* padding: 4px 6px; */
+  border-radius: 4px;
+  color: #333;
+}
+
+.container button span.iconfont {
+  font-size: 40px;
+  color: #343434;
+}
+
+.action .checked span.iconfont {
+  color: indianred;
+}
+
+.action {
+  position: absolute;
+  top: 24px;
+  left: 24px;
+}
+
+.colors {
+  position: absolute;
+  left: 30px;
+  top: 74px;
+}
+
+.colors li {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background-color: pink;
+  box-shadow: 0px 1px 5px 0px rgba(0, 0, 0, 0.5);
+  margin: 0 auto;
+}
+
+.colors .red {
+  background-color: red;
+}
+
+.colors .green {
+  background-color: green;
+}
+
+.colors .blue {
+  background-color: blue;
+}
+
+.colors .active {
+  width: 30px;
+  height: 30px;
+}
+
+.colors li:nth-child(n+2) {
+  margin-top: 12px;
+}
+
+.line {
+  position: absolute;
+  right: 30px;
+  top: 30px;
+}
+
+.line li:nth-child(n+2) {
+  margin-top: 20px;
+}
+
+.line1 {
+  width: 40px;
+  height: 3px;
+  background-color: #333;
+}
+
+.line2 {
+  width: 40px;
+  height: 6px;
+  background-color: #333;
+}
+.activeLine{
+  box-shadow: 0px 1px 5px 0px rgba(255, 0, 255, 0.5);
+}

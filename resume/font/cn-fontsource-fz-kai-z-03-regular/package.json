@@ -1,0 +1,27 @@
+{
+  "name": "cn-fontsource-fz-kai-z-03-regular",
+  "description": "方正楷体简体：好似兰花不妖不柔 留下清香沁人心脾",
+  "version": "1.0.1",
+  "repository": "https://github.com/wc-ex/cn-fontsource",
+  "keywords": [
+    "cn",
+    "cnfont",
+    "cn-font",
+    "fontsource",
+    "方正楷体"
+  ],
+  "font": {
+    "type": "free",
+    "fontClass": [
+      "方正",
+      "楷体"
+    ],
+    "link": "https://www.maoken.com/freefonts/1850.html",
+    "version": "1.10",
+    "familyName": "FZKai-Z03",
+    "subfamilyName": "Regular",
+    "copyright": "Copyright(c) Founder Corporation.1999",
+    "characterCount": 21992
+  },
+  "license": "unknown"
+}

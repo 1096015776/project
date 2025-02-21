@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>方玺简历</title>
+  <link href="css/animation.css" rel="stylesheet">
+  <link href="css/theme.css" rel="stylesheet">
+  <link href="css/style.css" rel="stylesheet">
+  <link href="iconfont/iconfont.css" rel="stylesheet">
+  <link rel="stylesheet" href="./font/cn-fontsource-fz-kai-z-03-regular/font.css">
+  </link>
+  <script src="./lib/jquery/jquery.min.js"></script>
+  <script src="./lib/jquery/isotope.pkgd.min.js"></script>
+  <script src="./lib/tween/tween.umd.js"></script>
+  <link rel="icon" href="/blog/favicon.ico" type="image/x-icon">
+</head>
+
+<body>
+  <div class="site-welcome" id="siteWelcome">
+  </div>
+  <header class="site-header-wrapper" id="siteHeaderWrapper">
+    <div class="site-header">
+      <div class="logo">
+        <span>fx</span>
+        <span>card</span>
+      </div>
+      <nav id="siteNav">
+        <ul>
+          <li>
+            <a href="#about">关于</a>
+          </li>
+          <li>
+            <a href="#skills">技能</a>
+          </li>
+          <li>
+            <a href="#works">作品</a>
+          </li>
+          <li>
+            <a href="http://archlinux.top/blog">博客</a>
+          </li>
+          <li>
+            <a href="#">日历</a>
+          </li>
+          <li>
+            <a href="#">联系方式</a>
+          </li>
+          <li>
+            <a href="#">其他</a>
+          </li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  <main>
+    <div class="banner">
+      <div class="banner-mask"></div>
+    </div>
+    <div class="container">
+      <div class="user-card" id="about" data-nav>
+        <div class="content">
+          <div class="avatar">
+            <img src="./img/avatar.png" alt="">
+          </div>
+          <div class="profile">
+            <span class="welcome">hello</span>
+            <h1>方玺</h1>
+            <p>前端工程师</p>
+            <hr>
+            <dl>
+              <dt>年龄</dt>
+              <dd>27</dd>
+              <dt>所在城市</dt>
+              <dd>重庆</dd>
+              <dt>邮箱</dt>
+              <dd>1096015776@qq.com</dd>
+              <dt>手机</dt>
+              <dd>13882915962</dd>
+            </dl>
+          </div>
+        </div>
+        <div class="social">
+          <nav>
+            <ul class="iconfont">
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+              <li>
+                <a href="#"></a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+      <div class="downloadResume-wrapper">
+        <span class="downloadResume">
+          <a class="downloadProfile" href="./file/方玺.pdf" target="_blank" download="">下载pdf简历</a>
+        </span>
+      </div>
+      <p class="selfIntroduction">
+        方玺,初级前端开发工程师,四年工作经验<br>
+        技能: html,css,js,vue,linux
+      </p>
+    </div>
+  </main>
+  <div class="container">
+    <section class="skills" id="skills" data-nav>
+      <h2 class="title">技能</h2>
+      <ol>
+        <li>
+          <h3>HTML 5 &amp;css3</h3>
+          <div class="progressBar">
+            <div class="progress"></div>
+          </div>
+        </li>
+        <li>
+          <h3>JavaScript</h3>
+          <div class="progressBar">
+            <div class="progress" style="width:70%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Jquery</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 40%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Vue</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 60%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>React</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 30%;"></div>
+          </div>
+        </li>
+        <li>
+          <h3>Node.js</h3>
+          <div class="progressBar">
+            <div class="progress" style="width: 40%;"></div>
+          </div>
+        </li>
+      </ol>
+    </section>
+    <section class="works" id="works" data-nav>
+      <h2 class="title">作品集</h2>
+      <nav>
+        <ol class="category">
+          <li id="all" data-filter="*">所有</li>
+          <li id="framework" data-filter=".pf-19">电脑端</li>
+          <li id="originJs" data-filter=".pf-20">手机端</li>
+          <div class="categoryBar" id="categoryBar">
+            <div class="categoryBar-inner" id="categoryBarInner"></div>
+          </div>
+        </ol>
+      </nav>
+      <div class="works-container pf-grid" id="workCotainer">
+        <div class="pf-grid-sizer"></div>
+        <div class="pf-grid-item size22 pf-19">
+          <a href="http://archlinux.top/pika/">
+            <img src="./img/www.archlinux.top_pika_.png" alt="img">
+          </a>
+        </div>
+        <div class="pf-grid-item size11 pf-19 pf-20">
+          <a href="http://archlinux.top/swiper">
+            <img src="./img/www.archlinux.top_swiper_.png" alt="img" data-filter="pf-19 pf-20">
+          </a>
+        </div>
+        <div class="pf-grid-item size11 pf-20">
+          <a href="http://archlinux.top/blog/">
+            <img src="./img/www.archlinux.top_blog_.png" alt="img" data-filter="pf-20">
+          </a>
+        </div>
+      </div>
+    </section>
+  </div>
+  <footer class="site-footer">
+    <span>©️2019-2025 Designed By&nbsp;<strong><a target="_blank" rel="noopener"
+          href="https://github.com/1096015776">FangXi</a></strong> &nbsp;</span>
+    <strong><a target="_blank" rel="noopener" href="https://beian.miit.gov.cn">蜀ICP备2024113416号</a></strong>
+  </footer>
+
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
