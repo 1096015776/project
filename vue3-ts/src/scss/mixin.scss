@@ -1,6 +1,13 @@
-@mixin circle($size, $color) {
+@mixin circle($color, $size) {
   width: $size;
   height: $size;
   background-color: $color;
   border-radius: 50%;
+}
+
+@mixin virtualCircle($color, $size) {
+  position: absolute;
+  content: "";
+  display: block;
+  @include circle($color, $size)
 }

@@ -19,13 +19,6 @@ const statusColor = status === 'online' ? '#34D859' : 'rgba(24, 28, 47, 0.2)'
 
 
 <style lang="scss" scoped>
-@mixin circleMixin($size, $color) {
-  position: absolute;
-  content: "";
-  display: block;
-  @include circle($size, $color)
-}
-
 .avatar {
   position: relative
 }
@@ -50,12 +43,12 @@ const statusColor = status === 'online' ? '#34D859' : 'rgba(24, 28, 47, 0.2)'
   left: 2px;
 
   &::before {
-    @include circleMixin(v-bind(statusSize), white);
+    @include virtualCircle(white, v-bind(statusSize));
     transform: scale(2);
   }
 
   &::after {
-    @include circleMixin(v-bind(statusSize), v-bind(statusColor));
+    @include virtualCircle(v-bind(statusColor), v-bind(statusSize));
   }
 }
 </style>

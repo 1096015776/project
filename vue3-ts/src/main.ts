@@ -1,5 +1,11 @@
 import { createApp } from 'vue'
-import './style.css'
 import App from './App.vue'
 
-createApp(App).mount('#app')
+import { VueSvgIconPlugin } from '@yzfe/vue-svgicon'
+import '@yzfe/svgicon/lib/svgicon.css'
+
+let app = createApp(App);
+app.use(VueSvgIconPlugin, { tagName: 'icon' })
+
+// Global component
+app.mount('#app')
