@@ -296,7 +296,7 @@ main .downloadResume {
   cursor: pointer;
 }
 
-main .downloadResume>a {
+main .downloadResume a {
   padding: 21px 55px;
   background-color: #efefef;
   display: inline-block;
