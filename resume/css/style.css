@@ -288,14 +288,18 @@ main .downloadResume-wrapper {
 }
 
 main .downloadResume {
-  padding: 21px 55px;
   border: 1px solid #cdcfd1;
-  background-color: #efefef;
   margin: 32px 0;
   transition: box-shadow .3s;
   font-weight: bold;
   font-size: 14px;
   cursor: pointer;
+}
+
+main .downloadResume>a {
+  padding: 21px 55px;
+  background-color: #efefef;
+  display: inline-block;
 }
 
 main .downloadResume:hover {
